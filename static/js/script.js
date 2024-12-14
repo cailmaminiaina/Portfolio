@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
         setTimeout(() => {
             loader.classList.add("hidden");
             document.body.style.overflow = "visible";
-        }, 1000);
+        }, 2000);
     }
 });
 
