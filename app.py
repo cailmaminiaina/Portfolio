@@ -9,25 +9,25 @@ def index():
     projects = [
         {
             'title': 'Projet 1',
-            'description': 'Un site web vitrine de tourisme pour notre agence utilisant Python avec le framework Django.',
+            'description': 'Un site web vitrine de tourisme pour notre agence de voyage en utilisant Python avec le framework Django. (Décembre 2022)',
             'image': 'project1.png',
             'url': 'https://laicriritravel.onrender.com'
         },
         {
             'title': 'Projet 2',
-            'description': 'Un chatbot messenger basé sur Python et OpenAI.',
+            'description': 'Un chatbot messenger basé sur Python et OpenAI "ChatBot 2.0". (Mars 2023)',
             'image': 'project2.png',
             'url': 'https://facebook.com/share/19VRFDWHMt'
         },
         {
             'title': 'Projet 3',
-            'description': 'Un chatbot messenger pour les entreprises pour automatoier avec l IA les services client.',
+            'description': 'Un chatbot messenger pour les entreprises pour automatoier avec l´Intelligence Artificiel le service client. (Mémoire Licence - Novembre 2024)',
             'image': 'project3.jpg',
             'url': 'https://github.com/cailmaminiaina/AI-ChatBot-for-Companies'
         },
         {
             'title': 'Projet 4',
-            'description': 'Mon portfolio en utilisant Python avec le framework Flask.',
+            'description': 'Mon portfolio en utilisant Python avec le framework Flask. (Décembre 2024)',
             'image': 'profile.png',
             'url': '/'
         }
