@@ -1,8 +1,5 @@
 flask
 gunicorn
 requests
-<<<<<<< HEAD
 datetime
-=======
 datetime
->>>>>>> a0ae611a4404b9c11c63945a35c35c4a72832407
