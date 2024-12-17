@@ -12,25 +12,29 @@ def index():
     projects = [
         {
             'title': 'Site Web en L1',
-            'description': 'Un site web vitrine de tourisme pour notre agence de voyage en utilisant Python avec le framework Django. <br>(Décembre 2022)',
+            'description': 'Un site web vitrine de tourisme pour notre agence de voyage en utilisant Python avec le framework Django.',
+            'date': 'Décembre 2022',
             'image': 'project1.png',
             'url': 'https://laicriritravel.onrender.com'
         },
         {
             'title': 'ChatBot 2.0',
-            'description': 'Un chatbot d´Intélligence Artificiel sur messenger programmé en Python. <br>(Mars 2023)',
+            'description': 'Un chatbot d´Intélligence Artificiel sur messenger programmé en Python.',
+            'date':'Mars 2023',
             'image': 'project2.png',
             'url': 'https://facebook.com/share/19VRFDWHMt'
         },
         {
             'title': 'IA pour le service client',
-            'description': 'Un chatbot d´Intelligence Artificiel sur messenger pour les entreprises pour automatiser le service client. <br>(Mémoire de Licence - Novembre 2024)',
+            'description': 'Un chatbot d´Intelligence Artificiel sur messenger pour les entreprises pour automatiser le service client. (Mémoire - Licence)',
+            'date': 'Novembre 2024',
             'image': 'project3.jpg',
             'url': 'https://github.com/cailmaminiaina/AI-ChatBot-for-Companies'
         },
         {
             'title': 'Portfolio',
-            'description': 'Mon portfolio en utilisant Python avec le framework Flask en intégrant une IA qui m´imite. <br>(Décembre 2024)',
+            'description': 'Mon portfolio en utilisant Python avec le framework Flask en intégrant une IA qui m´imite.',
+            'date': 'Décembre 2024',
             'image': 'project4.png',
             'url': '/'
         }
