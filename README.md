@@ -1,3 +1,3 @@
 # Portfolio
 ## https://laic.onrender.com
-![Mon portfolio](static/images/IMG_3520.jpeg)
+![Mon portfolio](static/images/capture.jpeg)
