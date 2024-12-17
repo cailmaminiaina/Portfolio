@@ -1,30 +1,33 @@
 {% extends "base.html" %}
 
-{% block title %}Portfolio de Laïc{% endblock %}
+{% block title %}Laïc  |  Portfolio{% endblock %}
 
 {% block about %}
 <section id="about">
-<div class="text-center">
-    <img src="{{ url_for('static', filename='images/profile.png') }}" alt="Profile" class="profile-img"  data-aos="zoom-in" data-aos-delay="2000">
-    <div class="card1"  data-aos="fade-up" data-aos-delay="2000">
-    <h2>À propos de moi</h2>
-    <p>
-        Je suis SOLOHERIMALALA Maminiaina Laïc, étudiant en quatrième année en informatique, passionné par le développement web, l’intelligence artificielle, les solutions numériques et l'entrepreunariat. Fort d’une formation solide et d’expériences variées, je relève des défis techniques tels que la création de projets IA, le développement d’applications web et d'autres généralement avec python. Intéressé également par le marketing digital, je gère des réseaux sociaux et crée du contenu engageant. Mon objectif est de contribuer à des projets innovants et d’explorer de nouvelles technologies pour simplifier la vie des utilisateurs.
-    </p>
-    <a href="/download-cv" class="btn btn-primary download-btn"  data-aos="fade-up" data-aos-delay="3000">Télécharger mon CV</a>
+    <div class="text-center">
+        <img src="{{ url_for('static', filename='images/profile.png') }}" alt="Profile" class="profile-img"  data-aos="zoom-in" data-aos-delay="2000">
+        <div class="card1">
+            <h2   data-aos="fade-up" data-aos-delay="2000">À propos de moi</h2>
+            <p   data-aos="fade-up" data-aos-delay="2200">
+                Je suis SOLOHERIMALALA Maminiaina Laïc, étudiant en quatrième année en informatique, passionné par la proggramation, l'intelligence artificielle, la cybersécurité et les solutions numériques. Grâce à une formation rigoureuse et des expériences concrètes, j'ai développé des compétences solides en création de projets basés sur l'IA, en développement d'applications web et en automatisation, principalement avec Python.
+
+                Doté d'un esprit analytique et créatif, je m'intéresse également au marketing digital, notamment à la gestion stratégique des réseaux sociaux et à la création de contenus engageants. Mon ambition est de contribuer activement à des projets innovants, de relever des défis techniques ambitieux et d'explorer de nouvelles technologies pour apporter des solutions efficaces et intuitives qui répondent aux besoins des utilisateurs.          
+            </p>
+            <a href="/download-cv" class="btn btn-primary download-btn" data-aos="fade-up" data-aos-delay="2400">Télécharger mon CV</a>
+        </div>
     </div>
-</div>
 </section>
 {% endblock %}
+
 {% block projects %}
 <section id="projects">
     <div class="projects md-4" data-aos="fade-up" data-aos-delay="200">
-        <h2 class="text-center">Voici mes projets :</h2>
+        <h2 class="text-center">Voici mes projets 👇🏽​</h2>
         <div class="row">
             {% for project in projects %}
             <div class="col-md-3 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="{{ loop.index * 200 }}">
                 <a href="{{ project.url }}" class="card">
-                    <img src="{{ url_for('static', filename='images/' + project.image) }}" class="card-img-top" alt="{{ project.title }}">
+                    <img loading="lazy" src="{{ url_for('static', filename='images/' + project.image) }}" class="card-img-top" alt="{{ project.title }}">
                     <div class="card-body">
                         <h5 class="card-title">{{ project.title }}</h5>
                         <p class="card-text">{{ project.description }}</p>
@@ -36,18 +39,39 @@
     </div>
 </section>
 {% endblock %}
+
 {% block contacts %}
 <section id="contacts">
-    <div class="contacts"  data-aos="fade-up" data-aos-delay="200">
-        <p>---------- Mes contacts ---------- </p>
+    <div class="contacts">
+        <h2 data-aos="fade-up" data-aos-delay="200">Contacts</h2>
+        <div data-aos="fade-up" data-aos-delay="400">
+        <p style="text-align: center;">---------- Réseaux sociaux ---------- </p>
         <ul class="social-links">
-            <li><a href="https://www.facebook.com/maminiaina.cail" target="_blank"><img src="https://asset.brandfetch.io/idpKX136kp/idgHU5-81-.svg" class="icon" alt="Facebook"> Facebook</a></li>
-            <li><a href="https://www.instagram.com/cail_maminiaina" target="_blank"><img src="https://asset.brandfetch.io/ido5G85nya/id71Q5hBn9.svg" class="icon" alt="Instagram"> Instagram</a></li>
-            <li><a href="https://www.github.com/in/maminiainalaic" target="_blank"><img src="https://asset.brandfetch.io/idZAyF9rlg/id2SthS2BC.svg" class="icon" alt="GitHub"> GitHub</a></li>
-            <li><a href="https://www.linkedin.com/in/la%C3%AFc-maminiaina-02a8a7300" target="_blank"><img src="https://asset.brandfetch.io/idJFz6sAsl/id18wpWxxf.svg" class="icon" alt="LinkdIn"> LinkedIn</a></li>
-            <li><a href="https://wa.me/261341820966" target="_blank"><img src="https://asset.brandfetch.io/id6Zq084G_/id3n0dCsgk.svg" class="icon" alt="WhatsApp"> WhatsApp</a></li>
+            <li><a href="https://www.facebook.com/maminiaina.cail" target="_blank"><img src="https://asset.brandfetch.io/idpKX136kp/idgHU5-81-.svg" class="icon" alt="Facebook" data-aos="fade-up" data-aos-delay="200"> Facebook</a></li>
+            <li><a href="https://www.instagram.com/cail_maminiaina" target="_blank"><img src="https://asset.brandfetch.io/ido5G85nya/id71Q5hBn9.svg" class="icon" alt="Instagram" data-aos="fade-up" data-aos-delay="400"> Instagram</a></li>
+            <li><a href="https://www.github.com/in/maminiainalaic" target="_blank"><img src="https://asset.brandfetch.io/idZAyF9rlg/id2SthS2BC.svg" class="icon" alt="GitHub" data-aos="fade-up" data-aos-delay="600"> GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/la%C3%AFc-maminiaina-02a8a7300" target="_blank"><img src="https://asset.brandfetch.io/idJFz6sAsl/id18wpWxxf.svg" class="icon" alt="LinkdIn" data-aos="fade-up" data-aos-delay="800"> LinkedIn</a></li>
+            <li><a href="https://wa.me/261341820966" target="_blank"><img src="https://asset.brandfetch.io/id6Zq084G_/id3n0dCsgk.svg" class="icon" alt="WhatsApp" data-aos="fade-up" data-aos-delay="1000"> WhatsApp</a></li>
         </ul>
+        </div>
     </div>
 </section>
 {% endblock %}
 
+{% block AI %}
+<div id="chat-icon" style="margin: 20px;"  onclick="toggleChatBox()">
+    <p style="text-align: center; color: rgb(255, 255, 255)">🤖IA Chat💬​</p>
+    <img src="{{ url_for('static', filename='images/profile.png') }}" alt="Chat with AI">
+</div>
+<div id="chat-box">
+    <div id="chat-header">
+        <h4>Discuter avec mon IA 🤖​</h4>
+        <button id="chat-close-button" class="chat-close-btn">&times;</button>
+    </div>
+    <div id="chat-content" aria-live="polite" aria-label="Contenu du chat"></div>
+    <input type="text" id="chat-input" placeholder="Écrivez votre message..." aria-label="Champ de saisie du message" role="textbox"/>
+    <button type="button" id="chat-send-button">
+        <i class="fas fa-paper-plane"></i>
+    </button>
+</div>
+{% endblock %}

@@ -3,20 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of SOLOHERIMALALA Maminiaina Laïc">
+    <meta name="keywords" content="Portfolio, Python, Flask, AI, ChatBot">
     <title>{% block title %}Portfolio{% endblock %}</title>
     <link rel="icon" href="{{ url_for('static', filename='images/profile.png') }}" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
     <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 
 </head>
 <body>
     <div class="loader">
-        <h1>Hello World!...</h1>
+        <h1 style="font-weight: bold;">Hello World!...<span class="shake">👋🏽</span></h1>
         <img src="{{ url_for('static', filename='images/profile.png') }}" alt="Loading">
     </div>
-    <nav class="navbar navbar-expand-lg navbar-dark" data-aos="fade-down" data-aos-delay="2000">
+    <nav class="navbar navbar-expand-lg navbar-dark" data-aos="fade-down" data-aos-delay="2000" style="font-weight: bold;">
         <div class="container-fluid">
             <a class="navbar-brand" href="/">Mon Portfolio</a>
             <!-- Bouton hamburger pour petits écrans -->
@@ -24,15 +27,15 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
+                <ul class="navbar-nav" data-aos="fade-right" data-aos-delay="2200">
                     <li class="nav-item">
-                        <a class="nav-link" href="#about">À propos</a>
+                        <a class="nav-link" href="#about">|    À propos    |</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#projects">Projets</a>
+                        <a class="nav-link" href="#projects">   |   Projets    |</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#contacts">Contacts</a>
+                        <a class="nav-link" href="#contacts">   |   Contacts    |</a>
                     </li>
                 </ul>
             </div>
@@ -43,7 +46,9 @@
         {% block about %}{% endblock %}
         {% block projects %}{% endblock %}
         {% block contacts %}{% endblock %}
+        {% block AI %}{% endblock %}
     </div>
+    <span id="date-time" class="date-time"></span>
     <footer class="footer">
         <p>© 2024 Maminiaina Laïc. <a href="mailto:maminiainalaic@gmail.com">Envoyez un mail</a></p>
     </footer>
