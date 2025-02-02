@@ -103,7 +103,7 @@ def load_chat_history(user_id):
 # Route pour gérer les conversations
 @app.route('/chat', methods=['POST'])
 def chat():
-    base_url = "https://api.pawan.krd/v1/"
+    base_url = "https://api.pawan.krd/cosmosrp-pro-it/v1/"
     api_key = "Bearer pk-WFstxMpbfTWDTfcbeaMrrLHcAERcaSAwibZBeALxWpqzKRLJ"
 
     # Vérifier si la requête contient un JSON valide
