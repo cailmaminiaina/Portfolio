@@ -127,8 +127,8 @@ def chat():
 
     # Construire les données pour l'API
     payload = {
-        "model": "pai-001-light-rp",
-        "temperature": 0.9,
+        "model": "cosmosrp-pro",
+        "temperature": 0.7,
         "messages": [
                 {
                 "role": "system", 
