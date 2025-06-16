@@ -15,7 +15,7 @@ def index():
             'description': 'Un site web vitrine de tourisme pour notre agence de voyage en utilisant Python avec le framework Django.',
             'date': 'Décembre 2022',
             'image': 'project1.png',
-            'url': 'https://laicriritravel.onrender.com'
+            'url': 'https://riritravel.onrender.com'
         },
         {
             'title': 'ChatBot 2.0',
@@ -103,7 +103,7 @@ def load_chat_history(user_id):
 # Route pour gérer les conversations
 @app.route('/chat', methods=['POST'])
 def chat():
-    base_url = "https://api.pawan.krd/cosmosrp-pro/v1/"
+    base_url = "https://api.pawan.krd/cosmosrp/v1/"
     api_key = "Bearer pk-WFstxMpbfTWDTfcbeaMrrLHcAERcaSAwibZBeALxWpqzKRLJ"
 
     # Vérifier si la requête contient un JSON valide
