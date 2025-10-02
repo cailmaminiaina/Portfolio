@@ -12,10 +12,10 @@ def index():
     projects = [
         {
             'title': 'Site Web en L1',
-            'description': 'Un site web vitrine de tourisme pour notre agence de voyage en utilisant Python avec le framework Django.',
+            'description': 'Un site web vitrine de tourisme pour une agence de voyage en utilisant Python avec le framework Django.',
             'date': 'Décembre 2022',
             'image': 'project1.png',
-            'url': 'https://riritravel.onrender.com'
+            'url': 'https://riritravel-mg.onrender.com'
         },
         {
             'title': 'ChatBot 2.0',
