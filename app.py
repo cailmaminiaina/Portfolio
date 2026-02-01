@@ -26,7 +26,7 @@ def index():
         },
         {
             'title': 'IA pour le service client',
-            'description': 'Un chatbot d´Intelligence Artificiel sur messenger pour les entreprises pour automatiser le service client. (Mémoire - Licence)',
+            'description': 'Un chatbot d´Intelligence Artificiel sur messenger pour les entreprises pour automatiser le service client.',
             'date': 'Novembre 2024',
             'image': 'project3.jpg',
             'url': 'https://github.com/cailmaminiaina/AI-ChatBot-for-Companies'
@@ -37,6 +37,13 @@ def index():
             'date': 'Décembre 2024',
             'image': 'project4.png',
             'url': '/'
+        },
+        {
+            'title': 'Achat Ticket en ligne',
+            'description': 'Site web permettant le paiement en ligne via Mobile Money et l’accès simplifié aux services numériques locaux grâce à une connectivité Wi-Fi publique fiable.',
+            'date': 'Décembre 2025',
+            'image': 'project5.png',
+            'url': 'https://wifizone-mzo.onrender.com'
         }
     ]
     return render_template('index.html', projects=projects)
